@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+html
+body {
+  overflow-x: hidden !important;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  scrollbar-width: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none ;
+}
+
+
+.bg-img{
+  background-image: url('./assets/images/bg-cover.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.ball{
+  animation: ikonicAnim 5s linear infinite alternate;
+  /* animation-name: ikonicAnim; */
+  /* animation-duration: 2s; */
+  /* animation-iteration-count: infinite; */
+
+}
+
+@keyframes ikonicAnim {
+  0% { bottom: 10%;
+  opacity: 0.5;}
+  100% { bottom: 90%;
+  }
+}
