@@ -17,7 +17,7 @@ const Index = () => {
 
   const getJobs = async () =>{
     try {
-      const getJobs = await axios.get(`${url}api/v1/adminpost/getalljobposts`);
+      const getJobs = await axios.get(`${url}/api/v1/adminpost/getalljobposts`);
       setJobs(getJobs.data.data)
     } catch (error) {
       console.log(error)
