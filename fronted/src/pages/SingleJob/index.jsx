@@ -34,7 +34,7 @@ const index = () => {
   
     const getApplication = async () =>{
       try {
-        const getSingleApp = await axios.post(`${url}/api/v1/application/getsingleapplication/${id}`);
+        const getSingleApp = await axios.post(`${url}api/v1/application/getsingleapplication/${id}`);
         setSingleApp([getSingleApp.data.data])
     } catch (error) {
         console.log(error)

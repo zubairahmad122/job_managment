@@ -24,6 +24,7 @@ const index = () => {
   });
 
   const url = process.env.URI;
+  console.log(url)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -50,7 +51,7 @@ const index = () => {
 
 
     try {
-      const response = await axios.post(`${url}/api/v1/application/apply`, formData);
+      const response = await axios.post(`${url}api/v1/application/apply`, formData);
       toast.success("We received your application successfully. Our team will contact you within 24 hours.");
       setFormData({
         name: "",
